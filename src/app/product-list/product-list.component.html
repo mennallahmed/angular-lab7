@@ -1,0 +1,5 @@
+<div class="row">
+  <h2>Products:</h2>
+    <app-product-card class="col-4" *ngFor="let user of alluser" [userData]="user"
+    (OnSelectedUser)="getSelecteduser($event)"></app-product-card>
+</div>
